@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Form</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+			width: 400px;
+			margin: 0 auto;
+		}
+		
+		h1 {
+			font-size: 24px;
+			text-align: center;
+		}
+		
+		label {
+			display: inline-block;
+			margin-bottom: 5px;
+		}
+		
+		input[type=text] {
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			width: 100%;
+		}
+		
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 8px 16px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+		}
+		
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+		
+		.container {
+			padding: 16px;
+		}
+		
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
+</head>
+<body>
+	<form action="submit" method="get">
+		<div class="container">
+			<h1>Payment Form</h1>
+			<label for="ten">Tên chủ thẻ:</label>
+			<input type="text" id="ten" name="ten" placeholder="Nhập tên chủ thẻ...">
+			
+			<label for="kieu">Kiểu thẻ:</label>
+			<input type="text" id="kieu" name="kieu" placeholder="Nhập kiểu thẻ...">
+			
+			<label for="so">Số thẻ:</label>
+			<input type="text" id="so" name="so" placeholder="Nhập số thẻ...">
+			
+			<label for="cvc">Số CVC:</label>
+			<input type="text" id="cvc" name="cvc" placeholder="Nhập số CVC...">
+			
+			<div class="clearfix">
+				<input type="submit" value="Submit">
+			</div>
+		</div>
+	</form>
+</body>
+</html>
