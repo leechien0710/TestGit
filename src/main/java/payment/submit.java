@@ -24,4 +24,8 @@ public class submit {
 		model.addAttribute("input", response);
 		return "NewFile1";
 	}
+	@PostMapping()
+	public String Test(){
+		return "Test";
+	}
 }
